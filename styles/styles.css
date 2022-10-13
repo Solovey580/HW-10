@@ -1,0 +1,263 @@
+body{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    height: 100vh;
+  padding: 16px;
+  background-image: linear-gradient( to top, #131e11, #F74C32 );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.world-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.jedi-swords{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+    color: #ffff;
+}
+
+
+/* First swords */
+
+
+
+            /* Jedi-Swords-One */
+
+.jedi-swords-one{
+    position: relative ;
+    height: 20px;
+    width: 400px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: inset 0 0 10px rgba(51, 228, 31, 0.9),
+                  0 0 15px  rgba(40, 160, 13, 0.9);
+    border-radius:5px 5px 0 0; 
+    transform: 30%;
+    margin-top: 150px;
+
+}
+
+.jedi-swords-one::before{
+    content: "";
+    position: absolute;
+    margin-left: 20px;
+    width: 50px;
+    height: 20px;
+    background-color: rgb(105, 104, 104, 0.662);
+}
+
+.jedi-swords-one{
+    animation: first 1s infinite alternate;
+}
+
+@keyframes first{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 200px;
+        opacity: 0;
+    }
+}
+
+
+/* Jedi-Swords-Two */
+
+.jedi-swords-two{
+    position: relative;
+    height: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background: rgb(244, 244, 249);
+    margin-top: 1rem;
+    box-shadow: inset 0 0 10px rgba(137, 25, 177, 0.9),
+                0 0 15px  rgba(137, 25, 177, 0.9);
+    border-radius: 5px 5px 0 0; 
+    transform-origin: 50% 20px;
+    
+}
+
+.jedi-swords-two::after{
+    content: "";
+    position: absolute;
+    margin-left: 330px;
+    width: 50px;
+    height: 20px;
+    background-color: rgba(105, 104, 104, 0.662);
+
+}
+
+.jedi-swords-two{
+    animation: second 1s infinite alternate;
+}
+
+@keyframes second{
+    0%{
+        transform: rotate(0)
+    }
+    100%{
+        transform: rotate(50deg);
+    }
+}
+
+
+/* Jedi-Swords-Three */
+
+.jedi-swords-three{
+    position: relative;
+    height: 20px;
+    width: 400px;
+    background: ghostwhite;
+    margin-top: 1rem;
+    box-shadow: inset 0 0 10px rgba(255, 213, 0, 0.9),
+                0 0 15px  rgba(255, 213, 0, 0.9);
+    border-radius:5px 5px 0 0; 
+    transform-origin: 30% 100px;
+
+}
+
+
+.jedi-swords-three::before{
+    content: "";
+    position: absolute;
+    margin-left: 20px;
+    width: 50px;
+    height: 20px;
+    background-color: rgb(105, 104, 104, 0.662);
+}
+
+
+.jedi-swords-three{
+    animation: third 1s infinite alternate;
+}
+
+
+@keyframes third{
+    0%{
+        transform: rotate(0)
+    }
+    100%{
+        transform: rotate(-50deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.circles-heading{
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+    color: #ffff;
+}
+
+
+.line-blok{
+    position: relative;
+    height: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(19, 205, 53) 0%, rgb(25, 208, 172) 100%, rgba(6,108,97,1) 100%);
+    border-radius: 5px; 
+    margin-top: 100px;
+}
+
+
+.circles{
+    display: flex;
+    margin-top: 100px;
+}
+
+
+.circle{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(213, 245, 7) 0%, rgb(9, 180, 12) 100%, rgb(72, 140, 133) 100%);
+    transform-origin: 50% -100px;
+}
+
+
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    top: -100px;
+    left: 50%;
+}
+
+
+
+.circles-first{
+    animation: first-circle 0.8s infinite alternate;
+}
+
+
+@keyframes first-circle {
+    0%, 50%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+
+
+.circles-last{
+    animation: last 0.8s infinite 0.8s alternate;
+}
+
+
+@keyframes last {
+    0%, 50%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+
+
+
+
+
+
+
